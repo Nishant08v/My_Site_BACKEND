@@ -1,0 +1,8 @@
+{
+    "env" : {
+        "DB_USER" : "nishu",
+        "DB_PASSWORD" : "nishu0805",
+        "DB_NAME" : "myDB",
+        "JWT_KEY" : "supersecret_key_for_authentication"
+    }
+}
