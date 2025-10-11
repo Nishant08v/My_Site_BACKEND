@@ -12,7 +12,8 @@ const app = express();
 
 app.use(cors({
   origin: ["http://localhost:3000",
-    "https://my-site-frontend-mizz8dpp6-nvs-projects-970ad677.vercel.app"],  // Allow your frontend origin
+    "https://my-site-frontend-mizz8dpp6-nvs-projects-970ad677.vercel.app",
+"https://my-site-frontend-plum.vercel.app"],  // Allow your frontend origin
   methods: ["GET", "POST", "PATCH", "DELETE", "OPTIONS"],
   credentials: true                   // Enable cookies or auth headers
 }));
