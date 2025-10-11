@@ -5,10 +5,16 @@ const userRoutes = require('./routes/users-routes');
 const HttpError = require('./models/http-error');
 const mongoose = require('mongoose');
 const fs = require('fs');
-const path = require('path')
+const path = require('path');
+const cors = require('cors');
 
 const app = express();
 
+app.use(cors({
+  origin: ["http://localhost:3000"],  // Allow your frontend origin
+  methods: ["GET", "POST", "PATCH", "DELETE", "OPTIONS"],
+  credentials: true                   // Enable cookies or auth headers
+}));
 
 app.use(bodyParser.json());
 app.use('/uploads/images', express.static(path.join('uploads','images')));
