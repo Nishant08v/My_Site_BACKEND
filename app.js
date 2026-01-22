@@ -9,6 +9,7 @@ const path = require('path');
 const cors = require('cors');
 
 const app = express();
+app.options("*", cors());
 
 app.use(cors({
   origin: ["http://localhost:3000",
